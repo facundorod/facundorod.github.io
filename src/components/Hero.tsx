@@ -25,7 +25,7 @@ export const Hero = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
-            Senior Software Backend Engineer at <span className="font-semibold text-blue-600">WhitePrompt</span>
+            Senior Software Backend Engineer
           </p>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8">
