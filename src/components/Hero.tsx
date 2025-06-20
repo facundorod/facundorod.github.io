@@ -13,50 +13,47 @@ export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50 opacity-70"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50 opacity-90"></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="animate-fade-in">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
             {/* Professional Photo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 order-2 lg:order-1">
               <div className="relative inline-block">
                 <img 
                   src="/lovable-uploads/2e1af83c-2f1b-433c-b9a7-91f91732d2fb.png"
                   alt="Facundo Rodriguez"
-                  className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl border-4 border-white"
+                  className="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-xl border-4 border-white"
                 />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600/20 to-purple-600/20"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-600/10 to-purple-600/10"></div>
               </div>
             </div>
             
             {/* Content */}
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-                Facundo
-                <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Rodriguez
-                </span>
+            <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                Facundo Rodriguez
               </h1>
               
-              <div className="flex items-center justify-center lg:justify-start mb-8 text-gray-600">
-                <MapPin size={20} className="mr-2 text-blue-600" />
-                <span className="text-lg font-medium">Tandil, Buenos Aires, Argentina</span>
+              <div className="flex items-center justify-center lg:justify-start mb-6 text-gray-600">
+                <MapPin size={18} className="mr-2 text-blue-600" />
+                <span className="text-base font-medium">Tandil, Buenos Aires, Argentina</span>
               </div>
               
               <div className="mb-8">
-                <p className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+                <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
                   Senior Software Backend Engineer
                 </p>
                 
-                <div className="flex flex-col items-center lg:items-start gap-3 text-lg text-gray-600">
-                  <span className="bg-blue-50 px-4 py-2 rounded-full font-medium">
+                <div className="flex flex-col items-center lg:items-start gap-3 text-base text-gray-600 mb-6">
+                  <span className="bg-blue-50 px-4 py-2 rounded-full font-medium border border-blue-100">
                     Co-founder of <span className="font-semibold text-blue-700">SIMVet Monitor</span>
                   </span>
                 </div>
               </div>
               
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto lg:mx-0 mb-12 leading-relaxed font-light">
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 mb-10 leading-relaxed">
                 Specialized in building robust server-side solutions for the healthcare industry. 
                 Passionate about scalable architecture, innovative medical technology, and creating 
                 impactful solutions that improve people's lives.
@@ -65,14 +62,14 @@ export const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                 <button 
                   onClick={scrollToAbout}
-                  className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-semibold"
+                  className="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-medium"
                 >
                   Learn More About Me
-                  <ArrowDown size={20} className="ml-2 group-hover:animate-bounce" />
+                  <ArrowDown size={18} className="ml-2 group-hover:animate-bounce" />
                 </button>
                 
-                <button className="inline-flex items-center px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-semibold">
-                  <Download size={20} className="mr-2" />
+                <button className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-medium">
+                  <Download size={18} className="mr-2" />
                   Download CV
                 </button>
               </div>
@@ -82,8 +79,8 @@ export const Hero = () => {
       </div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-16 h-16 bg-purple-200 rounded-full opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-20 left-10 w-16 h-16 bg-blue-100 rounded-full opacity-30 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-12 h-12 bg-purple-100 rounded-full opacity-30 animate-float" style={{ animationDelay: '1s' }}></div>
     </section>
   );
 };

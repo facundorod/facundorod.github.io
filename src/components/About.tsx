@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Code, Heart, GraduationCap, Stethoscope, ExternalLink, CheckCircle } from 'lucide-react';
 
@@ -121,11 +120,11 @@ export const About = () => {
           </div>
         </div>
         
-        {/* Enhanced SIMVet Monitor Section */}
-        <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl p-12 text-white">
+        {/* Enhanced SIMVet Monitor Section with softer colors */}
+        <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-12 text-white">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold mb-6">SIMVet Monitor</h3>
-            <p className="text-xl text-orange-100 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-200 max-w-4xl mx-auto leading-relaxed">
               Revolutionizing veterinary care through innovative monitoring technology
             </p>
           </div>
@@ -133,12 +132,12 @@ export const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h4 className="text-2xl font-bold mb-6">About the Platform</h4>
-              <p className="text-orange-100 mb-6 leading-relaxed text-lg">
+              <p className="text-slate-200 mb-6 leading-relaxed text-lg">
                 SIMVet Monitor is a cutting-edge veterinary monitoring platform that I co-founded 
                 to address the critical need for advanced patient monitoring in veterinary medicine. 
                 The platform provides real-time vital signs tracking and analysis for veterinary professionals.
               </p>
-              <p className="text-orange-100 mb-8 leading-relaxed text-lg">
+              <p className="text-slate-200 mb-8 leading-relaxed text-lg">
                 Built with modern web technologies, SIMVet Monitor offers intuitive dashboards, 
                 comprehensive patient data management, and advanced analytics to help veterinarians 
                 make informed decisions about animal care.
@@ -147,34 +146,34 @@ export const About = () => {
                 href="https://simvetmonitor.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-white text-orange-600 rounded-xl hover:bg-gray-50 transition-colors font-semibold text-lg"
+                className="inline-flex items-center px-8 py-4 bg-white text-slate-800 rounded-xl hover:bg-gray-50 transition-colors font-semibold text-lg shadow-lg"
               >
                 Visit SIMVet Monitor
                 <ExternalLink className="ml-3" size={20} />
               </a>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <h4 className="font-bold text-white mb-6 text-xl">Key Features</h4>
-              <ul className="space-y-4 text-orange-100">
+              <ul className="space-y-4 text-slate-200">
                 <li className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mt-0.5 mr-4 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-blue-300 mt-0.5 mr-4 flex-shrink-0" />
                   <span className="text-lg">Real-time vital signs monitoring and alerts</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mt-0.5 mr-4 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-blue-300 mt-0.5 mr-4 flex-shrink-0" />
                   <span className="text-lg">Comprehensive patient data management system</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mt-0.5 mr-4 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-blue-300 mt-0.5 mr-4 flex-shrink-0" />
                   <span className="text-lg">Advanced analytics and reporting tools</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mt-0.5 mr-4 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-blue-300 mt-0.5 mr-4 flex-shrink-0" />
                   <span className="text-lg">User-friendly interface for veterinary professionals</span>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-white mt-0.5 mr-4 flex-shrink-0" />
+                  <CheckCircle className="w-6 h-6 text-blue-300 mt-0.5 mr-4 flex-shrink-0" />
                   <span className="text-lg">Cloud-based platform for accessibility and scalability</span>
                 </li>
               </ul>
