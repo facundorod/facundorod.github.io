@@ -37,7 +37,7 @@ export const Education = () => {
           </p>
         </div>
         
-        <div className="space-y-8 mb-20">
+        <div className="space-y-8">
           {educationData.map((edu, index) => (
             <div key={index} className="group bg-gradient-to-r from-white to-gray-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8">
@@ -92,28 +92,6 @@ export const Education = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-3xl p-12 text-white text-center">
-          <h3 className="text-4xl font-bold mb-6">Commitment to Excellence</h3>
-          <p className="text-xl text-blue-100 mb-10 max-w-4xl mx-auto leading-relaxed">
-            Dedicated to staying at the forefront of technology through formal education, 
-            cutting-edge research, and hands-on experience with emerging technologies and methodologies.
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-3xl font-bold text-blue-200 mb-3">PhD Candidate</div>
-              <p className="text-blue-100 text-lg font-medium">Advanced Research</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-3xl font-bold text-purple-200 mb-3">9+ Years</div>
-              <p className="text-blue-100 text-lg font-medium">Academic Journey</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-3xl font-bold text-indigo-200 mb-3">UNICEN</div>
-              <p className="text-blue-100 text-lg font-medium">Prestigious Institution</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
