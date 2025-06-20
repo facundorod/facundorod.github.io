@@ -10,9 +10,10 @@ const experiences = [
     period: "Nov. 2024 - Present",
     projects: [
       {
-        name: "Axsome",
+        name: "Axsome Therapeutics",
         description: "Led the design and development of scalable APIs using Nest.js, GraphQL, and AWS for a medical tracking system. Developed voice transcription features and worked closely with medical teams to model complex treatment data.",
-        technologies: ["Nest.js", "GraphQL", "AWS", "AWS Transcribe", "AWS Lambda"]
+        technologies: ["Nest.js", "GraphQL", "AWS", "AWS Transcribe", "AWS Lambda"],
+        url: "https://www.axsome.com/"
       },
       {
         name: "JointOps", 
@@ -30,12 +31,14 @@ const experiences = [
       {
         name: "CyberPatient",
         description: "Built RESTful and GraphQL APIs in Nest.js for a healthcare simulation platform designed to train medical students through interactive virtual scenarios.",
-        technologies: ["Nest.js", "GraphQL", "RESTful APIs"]
+        technologies: ["Nest.js", "GraphQL", "RESTful APIs"],
+        url: "https://cyberpatient.ca/"
       },
       {
         name: "SecondNature",
         description: "Developed a middleware service to integrate NetSuite ERP with Stripe, improving payment processing and reconciliation for a wellness app.",
-        technologies: ["NetSuite", "Stripe", "Middleware"]
+        technologies: ["NetSuite", "Stripe", "Middleware"],
+        url: "https://www.secondnature.com/"
       }
     ]
   },
@@ -48,7 +51,8 @@ const experiences = [
       {
         name: "AI Video Knowledge Platform",
         description: "Developed and maintained Node.js-based microservices for an AI-powered video knowledge management platform. Created Zoom Marketplace app and internal SDKs.",
-        technologies: ["Node.js", "Express", "MongoDB", "Redis", "Zoom API"]
+        technologies: ["Node.js", "Express", "MongoDB", "Redis", "Zoom API"],
+        url: "https://www.deephow.com/"
       }
     ]
   },
@@ -61,7 +65,8 @@ const experiences = [
       {
         name: "DHL Logistics Applications",
         description: "Contributed to frontend (Angular) and backend (Node.js with TypeScript) features for warehouse operations, route optimization, and shipment tracking tools.",
-        technologies: ["Angular", "Node.js", "TypeScript", "PostgreSQL"]
+        technologies: ["Angular", "Node.js", "TypeScript", "PostgreSQL"],
+        url: "https://www.dhl.com/"
       }
     ]
   },
@@ -87,7 +92,8 @@ const experiences = [
       {
         name: "SAP ERP Solutions",
         description: "Developed custom SAP ABAP modules for finance and inventory management in large-scale ERP deployments. Participated in full software lifecycle for multiple clients.",
-        technologies: ["SAP ABAP", "ERP", "Finance Systems"]
+        technologies: ["SAP ABAP", "ERP", "Finance Systems"],
+        url: "https://tivit.com"
       }
     ]
   }
@@ -126,8 +132,22 @@ export const Experience = () => {
                 {exp.projects.map((project, projectIndex) => (
                   <div key={projectIndex} className="border-l-4 border-blue-500 pl-6">
                     <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center">
-                      {project.name}
-                      <ExternalLink size={16} className="ml-2 text-gray-400" />
+                      {project.url ? (
+                        <a 
+                          href={project.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="hover:text-blue-600 transition-colors flex items-center"
+                        >
+                          {project.name}
+                          <ExternalLink size={16} className="ml-2 text-gray-400" />
+                        </a>
+                      ) : (
+                        <>
+                          {project.name}
+                          <ExternalLink size={16} className="ml-2 text-gray-400" />
+                        </>
+                      )}
                     </h4>
                     <p className="text-gray-700 mb-4 leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
