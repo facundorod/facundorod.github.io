@@ -17,7 +17,7 @@ export const Hero = () => {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="animate-fade-in">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
             {/* Professional Photo */}
             <div className="flex-shrink-0 order-1 lg:order-1">
               <div className="relative inline-block">
@@ -31,7 +31,7 @@ export const Hero = () => {
             </div>
             
             {/* Content */}
-            <div className="flex-1 text-center lg:text-left order-2 lg:order-2">
+            <div className="flex-1 text-center lg:text-left order-2 lg:order-2 lg:pt-4">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
                 Facundo Rodriguez
               </h1>
