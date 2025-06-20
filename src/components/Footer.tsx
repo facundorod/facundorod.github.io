@@ -1,14 +1,12 @@
 
 import React from 'react';
-import { Github, Linkedin, Heart } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 export const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">Facundo Rodriguez</h3>
             <p className="text-gray-400 mb-4">
@@ -52,17 +50,6 @@ export const Footer = () => {
               <li>Cloud Architecture</li>
               <li>API Design</li>
             </ul>
-          </div>
-        </div>
-        
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center text-gray-400 mb-4 md:mb-0">
-            <span>© {currentYear} Facundo Rodriguez. Made with</span>
-            <Heart size={16} className="mx-2 text-red-500" />
-            <span>in Argentina</span>
-          </div>
-          <div className="text-sm text-gray-400">
-            Built with React, TypeScript & Tailwind CSS
           </div>
         </div>
       </div>

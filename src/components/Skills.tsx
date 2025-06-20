@@ -88,7 +88,7 @@ export const Skills = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => {
             const colors = colorClasses[category.color];
             const IconComponent = category.icon;
@@ -117,29 +117,6 @@ export const Skills = () => {
               </div>
             );
           })}
-        </div>
-        
-        <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 rounded-3xl p-12 text-white">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold mb-6">Professional Highlights</h3>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Specialized expertise backed by years of hands-on experience and continuous learning
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-4xl font-bold text-blue-400 mb-3">7+</div>
-              <p className="text-blue-100 text-lg font-medium">Years of Experience</p>
-            </div>
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-4xl font-bold text-green-400 mb-3">Healthcare</div>
-              <p className="text-blue-100 text-lg font-medium">Industry Specialization</p>
-            </div>
-            <div className="text-center bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-              <div className="text-4xl font-bold text-purple-400 mb-3">Remote</div>
-              <p className="text-blue-100 text-lg font-medium">Work Excellence</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

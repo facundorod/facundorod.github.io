@@ -17,22 +17,22 @@ export const Hero = () => {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="animate-fade-in">
-          <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Professional Photo */}
-            <div className="flex-shrink-0 order-2 lg:order-1">
+            <div className="flex-shrink-0 order-1 lg:order-1">
               <div className="relative inline-block">
                 <img 
                   src="/lovable-uploads/2e1af83c-2f1b-433c-b9a7-91f91732d2fb.png"
                   alt="Facundo Rodriguez"
-                  className="w-64 h-64 md:w-80 md:h-80 rounded-2xl object-cover shadow-xl border-4 border-white"
+                  className="w-56 h-56 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl border-4 border-white"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-600/10 to-purple-600/10"></div>
               </div>
             </div>
             
             {/* Content */}
-            <div className="flex-1 text-center lg:text-left order-1 lg:order-2">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <div className="flex-1 text-center lg:text-left order-2 lg:order-2">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
                 Facundo Rodriguez
               </h1>
               
@@ -47,7 +47,7 @@ export const Hero = () => {
                 </p>
                 
                 <div className="flex flex-col items-center lg:items-start gap-3 text-base text-gray-600 mb-6">
-                  <span className="bg-blue-50 px-4 py-2 rounded-full font-medium border border-blue-100">
+                  <span className="bg-blue-50 px-4 py-2 rounded-full font-medium border border-blue-200">
                     Co-founder of <span className="font-semibold text-blue-700">SIMVet Monitor</span>
                   </span>
                 </div>
@@ -77,10 +77,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-10 w-16 h-16 bg-blue-100 rounded-full opacity-30 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-12 h-12 bg-purple-100 rounded-full opacity-30 animate-float" style={{ animationDelay: '1s' }}></div>
     </section>
   );
 };
