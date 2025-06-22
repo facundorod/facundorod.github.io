@@ -25,69 +25,69 @@ const educationData = [
 
 export const Education = () => {
   return (
-    <section id="education" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
+    <section id="education" className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Education</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Academic foundation and continuous learning in systems engineering and computational mathematics, 
             driving innovation through research and practical application.
           </p>
         </div>
         
-        <div className="space-y-8">
+        <div className="space-y-6">
           {educationData.map((edu, index) => (
-            <div key={index} className="group bg-gradient-to-r from-white to-gray-50 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8">
-                <div className="flex items-start mb-6 lg:mb-0">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mr-8 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <GraduationCap className="text-white" size={28} />
+            <div key={index} className="group bg-gradient-to-r from-white to-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                <div className="flex items-start mb-4 lg:mb-0">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mr-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <GraduationCap className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-3">{edu.degree}</h3>
-                    <p className="text-2xl text-blue-600 font-semibold mb-4">{edu.institution}</p>
-                    <div className="flex flex-col sm:flex-row sm:items-center gap-4 text-gray-600">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{edu.degree}</h3>
+                    <p className="text-lg text-blue-600 font-semibold mb-3">{edu.institution}</p>
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-gray-600">
                       <div className="flex items-center">
-                        <MapPin size={18} className="mr-2 text-blue-600" />
-                        <span className="font-medium">{edu.location}</span>
+                        <MapPin size={16} className="mr-2 text-blue-600" />
+                        <span className="font-medium text-sm">{edu.location}</span>
                       </div>
                       <div className="flex items-center">
-                        <Calendar size={18} className="mr-2 text-blue-600" />
-                        <span className="font-medium">{edu.period}</span>
+                        <Calendar size={16} className="mr-2 text-blue-600" />
+                        <span className="font-medium text-sm">{edu.period}</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
                 <div className="flex-shrink-0">
-                  <span className={`inline-flex items-center px-6 py-3 rounded-full text-sm font-bold ${
+                  <span className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold ${
                     edu.status === 'In Progress' 
                       ? 'bg-gradient-to-r from-yellow-400 to-orange-500 text-white' 
                       : 'bg-gradient-to-r from-green-400 to-emerald-500 text-white'
                   }`}>
-                    <Award size={16} className="mr-2" />
+                    <Award size={14} className="mr-2" />
                     {edu.status}
                   </span>
                 </div>
               </div>
               
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div className="bg-blue-50 rounded-2xl p-8 border border-blue-100">
-                  <div className="flex items-center mb-4">
-                    <BookOpen size={20} className="mr-3 text-blue-600" />
-                    <span className="font-bold text-gray-900 text-lg">Program Overview</span>
+              <div className="grid lg:grid-cols-2 gap-6">
+                <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                  <div className="flex items-center mb-3">
+                    <BookOpen size={18} className="mr-3 text-blue-600" />
+                    <span className="font-bold text-gray-900">Program Overview</span>
                   </div>
-                  <p className="text-gray-700 leading-relaxed text-lg">{edu.description}</p>
+                  <p className="text-gray-700 leading-relaxed text-sm">{edu.description}</p>
                 </div>
                 
-                <div className="bg-purple-50 rounded-2xl p-8 border border-purple-100">
-                  <div className="flex items-center mb-4">
-                    <Award size={20} className="mr-3 text-purple-600" />
-                    <span className="font-bold text-gray-900 text-lg">Key Highlight</span>
+                <div className="bg-purple-50 rounded-xl p-6 border border-purple-100">
+                  <div className="flex items-center mb-3">
+                    <Award size={18} className="mr-3 text-purple-600" />
+                    <span className="font-bold text-gray-900">Key Highlight</span>
                   </div>
-                  <p className="text-purple-700 font-semibold text-lg">{edu.highlight}</p>
+                  <p className="text-purple-700 font-semibold text-sm">{edu.highlight}</p>
                 </div>
               </div>
             </div>
