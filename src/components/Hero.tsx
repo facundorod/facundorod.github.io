@@ -24,7 +24,7 @@ export const Hero = () => {
                 <img 
                   src="/lovable-uploads/2e1af83c-2f1b-433c-b9a7-91f91732d2fb.png"
                   alt="Facundo Rodriguez"
-                  className="w-56 h-56 md:w-64 md:h-64 rounded-2xl object-cover shadow-xl border-4 border-white"
+                  className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover shadow-xl border-4 border-white"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-600/10 to-purple-600/10"></div>
               </div>
