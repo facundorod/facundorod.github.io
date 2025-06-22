@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, ArrowDown, Download } from 'lucide-react';
 
@@ -17,21 +16,21 @@ export const Hero = () => {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="animate-fade-in">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-12 lg:gap-16">
             {/* Professional Photo */}
-            <div className="flex-shrink-0 order-1 lg:order-1">
+            <div className="flex-shrink-0 order-1 lg:order-1 flex items-center">
               <div className="relative inline-block">
                 <img 
                   src="/lovable-uploads/2e1af83c-2f1b-433c-b9a7-91f91732d2fb.png"
                   alt="Facundo Rodriguez"
-                  className="w-72 h-72 md:w-80 md:h-80 rounded-2xl object-cover shadow-xl border-4 border-white"
+                  className="w-80 h-96 md:w-96 md:h-[28rem] rounded-2xl object-cover shadow-xl border-4 border-white"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-blue-600/10 to-purple-600/10"></div>
               </div>
             </div>
             
             {/* Content */}
-            <div className="flex-1 text-center lg:text-left order-2 lg:order-2 lg:pt-4">
+            <div className="flex-1 text-center lg:text-left order-2 lg:order-2 lg:pt-4 flex flex-col justify-center">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
                 Facundo Rodriguez
               </h1>
