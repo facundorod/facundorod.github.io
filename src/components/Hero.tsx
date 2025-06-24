@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { MapPin, ArrowDown, Download, FileText, FileSpreadsheet } from 'lucide-react';
+import { MapPin, ArrowDown, FileText } from 'lucide-react';
 
 export const Hero = () => {
   const scrollToAbout = () => {
@@ -16,17 +15,6 @@ export const Hero = () => {
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Facundo_Rodriguez_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  const downloadCSV = () => {
-    // TODO: Replace with actual CSV file URL when provided
-    const csvUrl = '/path-to-your-data.csv';
-    const link = document.createElement('a');
-    link.href = csvUrl;
-    link.download = 'Facundo_Rodriguez_Data.csv';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -90,23 +78,13 @@ export const Hero = () => {
                   <ArrowDown size={18} className="ml-2 group-hover:animate-bounce" />
                 </button>
                 
-                <div className="flex gap-2">
-                  <button 
-                    onClick={downloadPDF}
-                    className="inline-flex items-center px-4 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-medium"
-                  >
-                    <FileText size={18} className="mr-2" />
-                    PDF
-                  </button>
-                  
-                  <button 
-                    onClick={downloadCSV}
-                    className="inline-flex items-center px-4 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-green-600 hover:text-green-600 transition-all duration-300 font-medium"
-                  >
-                    <FileSpreadsheet size={18} className="mr-2" />
-                    CSV
-                  </button>
-                </div>
+                <button 
+                  onClick={downloadPDF}
+                  className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 font-medium"
+                >
+                  <FileText size={18} className="mr-2" />
+                  Download CV
+                </button>
               </div>
             </div>
           </div>
