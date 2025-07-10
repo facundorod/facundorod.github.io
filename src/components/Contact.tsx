@@ -59,7 +59,7 @@ export const Contact = () => {
                 <Linkedin className="text-white" size={20} />
               </div>
               <span className="font-semibold text-gray-900 text-lg">LinkedIn</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>
