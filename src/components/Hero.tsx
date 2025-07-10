@@ -11,7 +11,7 @@ export const Hero = () => {
 
   const downloadPDF = () => {
     // TODO: Replace with actual PDF file URL when provided
-    const pdfUrl = '/path-to-your-cv.pdf';
+    const pdfUrl = '/Resume.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Facundo_Rodriguez_CV.pdf';
@@ -32,7 +32,7 @@ export const Hero = () => {
             <div className="flex-shrink-0 order-1 lg:order-1 flex items-center">
               <div className="relative inline-block">
                 <img 
-                  src="/lovable-uploads/2e1af83c-2f1b-433c-b9a7-91f91732d2fb.png"
+                  src="/images/facundo.png"
                   alt="Facundo Rodriguez"
                   className="w-80 h-96 md:w-96 md:h-[28rem] rounded-2xl object-cover shadow-xl border-4 border-white"
                 />
